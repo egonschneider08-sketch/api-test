@@ -7,9 +7,11 @@ API_KEY = "919145263fdc4b4d95a232914262909"
 
 API_link = "http://api.weatherapi.com/v1/current.json"
 
+city = input(str("Digite a cidade para qual deseja obter os dados do clima: "))
+
 parameters = {
     "key": API_KEY,
-    "q": "São Paulo ",# CIDADE PARA QUAL QUEREMOS A COLETA DE DADOS 
+    "q": city, # CIDADE PARA QUAL QUEREMOS A COLETA DE DADOS
     "lang": "pt" #LINGUAGEM EM QUE QUEREMOS A RESPOSTA
 }
 #ARMAZENANDO A RESPOTA DA API EM UMA VARIAVEL
